@@ -70,8 +70,9 @@ header {
     color: white;
 }
 
-header .content {
-    float: left;
+.header-content {
+    width: 950px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -101,6 +102,13 @@ header h3 {
     vertical-align: top;
 }
 
+.wrapper {
+    width: 950px;
+    height: 430px;
+    margin: 30px auto 0;
+    padding: 0;
+}
+
 /*Sobre mim ----------------------------------------*/
 
 .profile-thumbnail {
@@ -113,29 +121,16 @@ header h3 {
     padding: 0;
 }
 
-.wrapper {
-    width: 950px;
-    height: 430px;
-    margin: 0 auto;
-    -webkit-box-shadow: -1px 9px 46px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 9px 46px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 9px 46px -8px rgba(0, 0, 0, 0.75);
-    padding: 0;
-}
-
 .greetings {
     width: 3em;
     display: inline-block;
     background-color: #e0172d;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     color: white;
     font-size: 1em;
     line-height: 0.5;
     text-align: center;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .name {
@@ -158,13 +153,17 @@ header h3 {
 }
 
 .button {
-    background-color: #b31414;
+    background-color: #e0172d;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    transition: 0.2s ;
+}
+.button:hover{
+    background-color: #f75162;
 }
 
 .wrapper ul {
@@ -224,4 +223,87 @@ header h3 {
     font-size: 1.3em;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
+}
+
+
+/*Bio ----------------------------------------------------------*/
+
+
+#bio .wrapper{
+    height: auto;
+}
+
+#bio span{
+    font-weight: bold;
+    color: #e0172d;
+}
+
+.other-title{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8em;
+    color: #e0172d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald';
+}
+.title{
+    margin: 40px auto;
+    text-align: center;
+}
+.title-icon{
+    width: 50px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cards{
+    width: 950px;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 20px auto 0;
+}
+
+.card{
+    padding: 20px;
+    text-align: justify;
+}
+
+.card-title{
+    font-size: 1.2em;
+    color: #e0172d;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Oswald';
+}
+
+.card-list{
+    list-style-type: square;
+    margin: 5px 0 10px 20px;
+}
+
+/*Experiência --------------------------------------------------------*/
+
+.jobs{
+    width: 820px;
+    margin: 0 auto;
+}
+
+.job-list span{
+    font-weight: bold;
+}
+
+.job-list li{
+    margin: 10px auto;
+}
+
+.job-list ul{
+    list-style-type: circle;
+    margin: 0 0 0 20px;
+}
+
+.custom-title1{
+    margin: 0 auto 10px;
 }
