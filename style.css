@@ -92,6 +92,11 @@ header h3 {
     padding: 0;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 /*Sections ----------------------------------------*/
 
 .section-text {
@@ -160,9 +165,10 @@ header h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    transition: 0.2s ;
+    transition: 0.2s;
 }
-.button:hover{
+
+.button:hover {
     background-color: #f75162;
 }
 
@@ -192,13 +198,14 @@ header h3 {
 
 /*Desenho favorito -------------------------------------------*/
 
-.section-title{
+.section-title {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     margin: 50px 0 30px 0;
 }
-.content{
+
+.content {
     width: 950px;
     height: 430px;
     margin: 0 auto;
@@ -215,30 +222,28 @@ header h3 {
     padding: 0px;
 }
 
-.animation-text{
+.animation-text {
     width: 60%;
 }
 
-.animation-title{
+.animation-title {
     font-size: 1.3em;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
-
 /*Bio ----------------------------------------------------------*/
 
-
-#bio .wrapper{
+#bio .wrapper {
     height: auto;
 }
 
-#bio span{
+#bio span {
     font-weight: bold;
     color: #e0172d;
 }
 
-.other-title{
+.other-title {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -248,30 +253,32 @@ header h3 {
     font-weight: bold;
     font-family: 'Oswald';
 }
-.title{
+
+.title {
     margin: 40px auto;
     text-align: center;
 }
-.title-icon{
+
+.title-icon {
     width: 50px;
     margin: 0 10px 0 0;
     display: inline-block;
     vertical-align: middle;
 }
 
-.cards{
+.cards {
     width: 950px;
     display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 20px auto 0;
+    grid-template-columns: auto auto auto;
+    margin: 20px auto 0;
 }
 
-.card{
+.card {
     padding: 20px;
     text-align: justify;
 }
 
-.card-title{
+.card-title {
     font-size: 1.2em;
     color: #e0172d;
     text-transform: uppercase;
@@ -279,31 +286,113 @@ header h3 {
     font-family: 'Oswald';
 }
 
-.card-list{
+.card-list {
     list-style-type: square;
     margin: 5px 0 10px 20px;
 }
 
 /*Experiência --------------------------------------------------------*/
 
-.jobs{
+.jobs {
     width: 820px;
     margin: 0 auto;
 }
 
-.job-list span{
+.job-list span {
     font-weight: bold;
 }
 
-.job-list li{
+.job-list li {
     margin: 10px auto;
 }
 
-.job-list ul{
+.job-list ul {
     list-style-type: circle;
     margin: 0 0 0 20px;
 }
 
-.custom-title1{
+.custom-title1 {
     margin: 0 auto 10px;
+}
+
+/* Responsive Media Queries --------------------------------------------*/
+
+/*Tablets ---------------------------------*/
+
+@media only screen and (max-width: 900px) {
+    /*General Structure ----------------------------*/
+    .wrapper, .content {
+        width: 100%;
+    }
+    .profile-thumbnail, .section-thumbnail {
+        background-position: center;
+    }
+    .section-thumbnail {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cards, .jobs {
+        width: 100%;
+    }
+    section {
+        padding: 0 40px;
+    }
+}
+
+/*Mobile ---------------------------------*/
+
+@media only screen and (max-width: 450px) {
+    /*General Structure ----------------------------*/
+
+    /*Header ----------------------------------------*/
+    header .container{
+        width: 100%;
+    }
+    .header-content{
+        width: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    header h1{
+        margin: 0;
+        padding: 0;
+    }
+    header h3{
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+    
+    /*Home Page ------------------------------------*/
+    .wrapper, .content {
+        height: auto;
+    }
+    .profile-thumbnail {
+        height: 220px;
+        background-position: 0 0;
+    }
+    .section-thumbnail{
+        height: 220px;
+    }
+    .profile-thumbnail, .section-text, .section-thumbnail {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .wrapper ul {
+        margin: 50px 0 0 0;
+    }
+    .animation-text{
+        margin: 20px 0;
+    }
+    
+    
+    /*About Page -----------------------------------*/
+    .cards{
+        display: block;
+    }
+    .custom-title1 {
+        margin: 40px auto;
+    }
 }
