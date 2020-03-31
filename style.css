@@ -158,6 +158,8 @@ header a {
 }
 
 .button {
+    margin: 5px 0;
+    display: inline-block;
     background-color: #e0172d;
     color: white;
     padding: 5px 10px;
